@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular Bacteriología</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Curricular Bacteriología y Laboratorio Clínico</h1>
+  <div class="malla">
+    <!-- Primer Año - 1 Semestre -->
+    <div class="ramo" data-id="biologia-celular" data-prerrequisitos="">Biología Celular</div>
+    <div class="ramo" data-id="constitucion" data-prerrequisitos="">Seminario Introducción a la Constitución Política de Colombia</div>
+    <div class="ramo" data-id="logica" data-prerrequisitos="">Lógica de Pensamiento</div>
+    <div class="ramo" data-id="valores" data-prerrequisitos="">Taller de Vivencia de los Valores</div>
+    <div class="ramo" data-id="ingles-1" data-prerrequisitos="">Inglés I</div>
+    <div class="ramo" data-id="matematicas-1" data-prerrequisitos="">Matemáticas I</div>
+    <div class="ramo" data-id="quimica-general" data-prerrequisitos="">Química General</div>
+    <div class="ramo" data-id="electivas" data-prerrequisitos="">Electivas de Complementación</div>
+
+    <!-- Primer Año - 2 Semestre -->
+    <div class="ramo" data-id="comunicacion" data-prerrequisitos="">Taller de Comunicación Oral y Escrita</div>
+    <div class="ramo" data-id="ingles-2" data-prerrequisitos="ingles-1">Inglés II</div>
+    <div class="ramo" data-id="matematicas-2" data-prerrequisitos="matematicas-1">Matemáticas II</div>
+    <div class="ramo" data-id="morfofisiologia" data-prerrequisitos="biologia-celular">Morfofisiología</div>
+    <div class="ramo" data-id="analisis-instrumental" data-prerrequisitos="quimica-general matematicas-1">Análisis Instrumental</div>
+    <div class="ramo" data-id="quimica-organica" data-prerrequisitos="quimica-general">Química Orgánica</div>
+
+    <!-- Segundo Año - 3 Semestre -->
+    <div class="ramo" data-id="inmunologia-general" data-prerrequisitos="morfofisiologia">Inmunología General</div>
+    <div class="ramo" data-id="microbiologia-general" data-prerrequisitos="biologia-celular">Microbiología General</div>
+    <div class="ramo" data-id="estadistica-aplicada" data-prerrequisitos="matematicas-2">Estadística Aplicada</div>
+    <div class="ramo" data-id="genetica-microbiana" data-prerrequisitos="">Genética Microbiana</div>
+    <div class="ramo" data-id="metabolismo" data-prerrequisitos="quimica-organica">Metabolismo y Química Estructural</div>
+    <div class="ramo" data-id="educacion-salud" data-prerrequisitos="">Educación para la Salud</div>
+
+    <!-- Segundo Año - 4 Semestre -->
+    <div class="ramo" data-id="bacteriologia-general" data-prerrequisitos="microbiologia-general">Bacteriología General</div>
+    <div class="ramo" data-id="hematologia-general" data-prerrequisitos="inmunologia-general">Hematología General</div>
+    <div class="ramo" data-id="inmunologia-clinica" data-prerrequisitos="inmunologia-general">Inmunología Clínica</div>
+    <div class="ramo" data-id="seminario-investigacion" data-prerrequisitos="logica">Seminario de Investigación</div>
+    <div class="ramo" data-id="biologia-molecular" data-prerrequisitos="biologia-celular">Biología Molecular</div>
+    <div class="ramo" data-id="bioquimica-clinica" data-prerrequisitos="metabolismo">Bioquímica Clínica</div>
+
+    <!-- Tercer Año - 5 Semestre -->
+    <div class="ramo" data-id="bacteriologia-clinica" data-prerrequisitos="bacteriologia-general">Bacteriología Clínica</div>
+    <div class="ramo" data-id="hematologia-clinica" data-prerrequisitos="hematologia-general">Hematología Clínica</div>
+    <div class="ramo" data-id="genetica-humana" data-prerrequisitos="biologia-celular biologia-molecular">Genética Humana</div>
+    <div class="ramo" data-id="micologia" data-prerrequisitos="microbiologia-general">Micología</div>
+    <div class="ramo" data-id="parasitologia-intestinal" data-prerrequisitos="microbiologia-general">Parasitología Intestinal</div>
+    <div class="ramo" data-id="quimica-especial" data-prerrequisitos="bioquimica-clinica">Química Especial</div>
+
+    <!-- Tercer Año - 6 Semestre -->
+    <div class="ramo" data-id="ambiente" data-prerrequisitos="electivas inmunologia-clinica micologia">Ambiente, Agricultura y Desarrollo Sostenible</div>
+    <div class="ramo" data-id="control-microbiologico" data-prerrequisitos="electivas inmunologia-clinica micologia">Control Microbiológico</div>
+    <div class="ramo" data-id="cultura-colombiana" data-prerrequisitos="electivas">Cultura Colombiana</div>
+    <div class="ramo" data-id="epidemiologia" data-prerrequisitos="estadistica-aplicada electivas">Epidemiología</div>
+    <div class="ramo" data-id="fisiologia-veterinaria" data-prerrequisitos="parasitologia-intestinal micologia inmunologia-clinica electivas">Fisiología y Parasitología Veterinaria</div>
+    <div class="ramo" data-id="hematologia-especial" data-prerrequisitos="hematologia-clinica electivas">Hematología Especial</div>
+    <div class="ramo" data-id="parasitologia-tisular" data-prerrequisitos="electivas">Parasitología Tisular</div>
+    <div class="ramo" data-id="virologia" data-prerrequisitos="electivas">Virología</div>
+
+    <!-- Cuarto Año - 7 Semestre -->
+    <div class="ramo" data-id="atencion-primaria" data-prerrequisitos="">Atención Primaria en Salud</div>
+    <div class="ramo" data-id="banco-sangre" data-prerrequisitos="genetica-humana inmunologia-clinica">Banco de Sangre y Medicina de Transfusión</div>
+    <div class="ramo" data-id="bioetica" data-prerrequisitos="">Bioética</div>
+    <div class="ramo" data-id="complementacion-enfasis" data-prerrequisitos="electivas">Complementación del Énfasis</div>
+    <div class="ramo" data-id="cultura-latinoamericana" data-prerrequisitos="">Cultura Latinoamericana</div>
+    <div class="ramo" data-id="electiva-enfasis-1" data-prerrequisitos="electivas">Electiva de Profundización - Énfasis I</div>
+    <div class="ramo" data-id="metodologia-investigacion" data-prerrequisitos="seminario-investigacion">Metodología de la Investigación</div>
+    <div class="ramo" data-id="salud-publica" data-prerrequisitos="epidemiologia">Salud Pública</div>
+
+    <!-- Cuarto Año - 8 Semestre -->
+    <div class="ramo" data-id="administracion-salud" data-prerrequisitos="">Administración en Salud</div>
+    <div class="ramo" data-id="aseguramiento-calidad" data-prerrequisitos="">Aseguramiento en la Calidad</div>
+    <div class="ramo" data-id="correlacion-clinica" data-prerrequisitos="bacteriologia-clinica micologia quimica-especial virologia parasitologia-tisular hematologia-especial">Correlación Clínica - Patológica</div>
+    <div class="ramo" data-id="electiva-enfasis-2" data-prerrequisitos="electiva-enfasis-1">Electiva de Profundización - Énfasis II</div>
+    <div class="ramo" data-id="salud-sociedad" data-prerrequisitos="">Salud y Sociedad</div>
+
+    <!-- Quinto Año - 9 y 10 Semestre -->
+    <div class="ramo" data-id="practica-clinico" data-prerrequisitos="complementacion-enfasis electiva-enfasis-1 electiva-enfasis-2">Práctica Formativa (Laboratorio Clínico)</div>
+    <div class="ramo" data-id="modalidad-grado" data-prerrequisitos="complementacion-enfasis electiva-enfasis-1 electiva-enfasis-2">Modalidad de Grado</div>
+    <div class="ramo" data-id="practica-especializado" data-prerrequisitos="complementacion-enfasis electiva-enfasis-1 electiva-enfasis-2">Práctica Formativa (Laboratorio Especializado)</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
 
